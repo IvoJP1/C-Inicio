@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[20];
+    int b[20];
+    int c[20];
+    int i;
+    
+    printf("Digite valores para serem somados: ");
+    
+    for(i = 0; i < 20; i++){
+        printf("\n Digite um vaolor: ");
+        scanf("%d", &a[i]);
+        
+        printf("\n Digite outro valor: ");
+        scanf("%d", &b[i]);
+        
+        c[i] = a[i] + b[i];
+        printf("\n A soma dos valores é: %d \n", c[i]);
+    }
+    
+    for(i = 0; i < 20; i++){
+        printf("%d-", c[i]);
+    }
+
+    return 0;
+}
