@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+   int a[10];
+   int neg = 0;
+   int soma = 0;
+   int i;
+   
+   for(i = 0; i<10; i++){
+       printf("\n Digite um numero: ");
+       scanf("%d", &a[i]);
+   }
+   
+   for(i = 0; i<10; i++){
+       if(a[i] < 0){
+           neg++;
+       }
+       else{
+           soma = a[i] + soma;
+       }
+       
+   }
+   
+    printf("quantidade de negativos: %d", neg);
+    printf("\n soma dos positivos : %d", soma);
+   
+    return 0;
+    
+}
