@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int soma (int a, int b) {
+    int x;
+    x = a + b;
+    return x;
+}
+
+void main()
+{
+    int numA, numB, total;
+    printf("Entre dois valores ");
+    scanf("%d%d", &numA, &numB);
+    total = soma(numA, numB);
+    printf("A soma é = %d", total);
+    return;
+}
