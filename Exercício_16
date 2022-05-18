@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int a, b, c, d;
+
+int troca (int x, int y) {
+  
+  c = x;
+  d = y;
+  
+  a = d;
+  b = c;
+  
+  
+    
+    return 0;
+}
+
+void main()
+{
+  int x;
+  int y;
+
+  
+  
+  printf("Digite dois valores: ");
+  scanf("%d%d", &x, &y);
+   
+   troca(x, y);
+   
+   printf("O primeiro é %d e o segundo é %d", a, b);
+   
+}
