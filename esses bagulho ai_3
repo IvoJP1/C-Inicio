@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int igualdade (int a, int b) {
+    
+    return (a==b);
+}
+
+void main()
+{
+    int numA, numB, valor;
+    printf("Entre dois valores ");
+    scanf("%d%d", &numA, &numB);
+    valor = igualdade(numA, numB);
+    printf("%d", valor);
+    return;
+}
