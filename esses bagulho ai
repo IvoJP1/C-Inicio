@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+void linha(int v)
+{
+ int i;
+    
+    for(i=1;i<=v;i++)
+        putchar('*');
+    putchar('\n');
+    
+    return ;
+}
+
+int main()
+{
+    int i;
+    
+   linha(10000000000000000);
+    
+    puts("Números entre 1 e 5");
+    
+   linha(4);
+    
+    for (i=1;i<=5;i++)
+        printf("%d\n",i);
+        
+    linha(2);
+}
