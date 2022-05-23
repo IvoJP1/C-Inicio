@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int d;
+    int s;
+    int cpf;
+    int sub;
+    
+    
+    printf("Digite seu CPF\n");
+    scanf("%d", &cpf);
+    printf("Digite a quantidade de dependentes que você possui: \n");
+    scanf("%d", &d);
+    printf("Digite sua renda mensal: \n");
+    scanf("%d", &s);
+    
+    if(s < 12)
+
+    return 0;
+    
