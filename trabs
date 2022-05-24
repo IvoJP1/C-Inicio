@@ -3,9 +3,11 @@
 int main()
 {
     int d;
-    int s;
+    float s;
     int cpf;
-    int sub;
+    float sub;
+    float inss;
+    float irrf;
     
     
     printf("Digite seu CPF\n");
@@ -13,9 +15,45 @@ int main()
     printf("Digite a quantidade de dependentes que você possui: \n");
     scanf("%d", &d);
     printf("Digite sua renda mensal: \n");
-    scanf("%d", &s);
+    scanf("%f", &s);
     
-    if(s < 12)
+    if(s < 1212.00){
+        inss = s - (s * 0.075);
+    }
+    else if (1212.01 < s < 2427.35){
+        inss = s - ((s * 0.09)-18.18);
+    }
+    else if (2427.36 < 3641.03){
+        inss = s - ((s * 0.12)-91);
+    }
+    else if (3641.04 < 7087.22){
+        inss = s - ((s * 0.14)-163.82);
+    }
+    else{
+        inss = s - 828.38;
+    }
+    
+    sub = inss - (d * 189.59);
+    
+    if (sub < 1903.98){
+        irrf = sub;
+    }
+    else if(1903.99 < sub < 2826.65){
+        irrf = sub - ((sub * 0.075) - 142.80);
+    }
+     else if(2826.66 < sub < 3751.05){
+        irrf = sub - ((sub * 0.15) - 354.80);
+    }
+    else if(3751.06 < sub < 4664.68){
+        irrf = sub - ((sub * 0.225) - 636.13);
+    }
+    else{
+        irrf = sub - ((sub * 0.275) - 869.36);
+    }
+    
+    printf("Seu sálario com desconto é: %f", irrf);
 
     return 0;
+    
+}
     
