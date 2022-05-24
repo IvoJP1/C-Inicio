@@ -22,13 +22,13 @@ int main()
     if(s < 1212.00){
         des = (s * 0.075);
     }
-    else if (1212.01 < s || s < 2427.35){
+    else if (1212.01 < s && s < 2427.35){
         des = ((s * 0.09)-18.18);
     }
-    else if (2427.36 < s || s < 3641.03){
+    else if (2427.36 < s && s < 3641.03){
         des = ((s * 0.12)-91);
     }
-    else if (3641.04 < s || s < 7087.22){
+    else if (3641.04 < s && s < 7087.22){
         des = ((s * 0.14)-163.82);
     }
     else{
@@ -41,13 +41,13 @@ int main()
     if (sub < 1903.98){
         irrf = inss;
     }
-    else if(1903.99 < sub < 2826.65){
+    else if(1903.99 < sub && sub < 2826.65){
         irrf = inss - ((sub * 0.075) - 142.80);
     }
-     else if(2826.66 < sub < 3751.05){
+     else if(2826.66 < sub && sub < 3751.05){
         irrf = inss - ((sub * 0.15) - 354.80);
     }
-    else if(3751.06 < sub < 4664.68){
+    else if(3751.06 < sub && sub < 4664.68){
         irrf = inss - ((sub * 0.225) - 636.13);
     }
     else{
@@ -62,4 +62,3 @@ int main()
     return 0;
     
 }
-    
