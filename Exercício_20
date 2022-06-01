@@ -1,0 +1,20 @@
+#include <stdio.h>
+float media;
+int med(float x, float y) {
+    media=(x+y)/2;
+    return media;
+}
+
+int main()
+{
+    float a=0;
+    float b=0;
+    printf("Digite um valor: ");
+    scanf("%f", &a);
+    printf("Digite outro valor: ");
+    scanf("%f", &b);
+    med(a,b);
+    printf("A média dos valores é: %.2f", media);
+    
+    return 0;
+}
