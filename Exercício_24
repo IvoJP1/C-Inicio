@@ -1,0 +1,27 @@
+int main()
+{
+    int a[3][3];
+    int b;
+    int c;
+    printf("Digite os valores da matriz: ");
+    for(b=0;b<3;b++) {
+        for(c=0;c<3;c++) {
+            scanf("%d", &a[b][c]);
+        }
+    }
+    
+    printf("\n");
+    for(c=0;c<3;c++) {
+        printf("%d  ",a[0][c]);
+    }
+    printf("\n");
+    for(c=0;c<3;c++) {
+        printf("%d  ",a[1][c]);
+    }
+    printf("\n");
+    for(c=0;c<3;c++) {
+       printf("%d  ",a[2][c]);
+    }
+    
+    return 0;
+}
