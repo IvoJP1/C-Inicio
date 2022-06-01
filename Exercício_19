@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <math.h>
+
+int x;
+int y;
+int z;
+int d;
+double xl;
+double xll;
+double xlll;
+
+int conta(int a, int b, int c){
+    d=(b*b)-(4*a*c);
+    if(d<0) {
+        printf("Valor Negativo! Impossível Continuar a conta!");
+        return 0;
+    }
+    else {
+        if(d==0) {
+          xlll = -b/(2*a);  
+        }
+        else {
+        xl = (-b + sqrt(d))/(2*a);
+        xll = (-b - sqrt(d))/(2*a);
+        }
+        
+        return xl, xll, xlll;
+    }
+}
+
+int main()
+{
+    printf("Digite os valores de a, b e c: ");
+    scanf("%d%d%d", &x, &y, &z);
+    conta(x,y,z);
+    if(d<0) {
+        printf(" Sem raíz!");
+    }
+    else{
+        if(d==0) {
+            printf("O valor da raíz é: %f", xlll);
+        }
+        else{
+    printf("O valor das raízes são: %f e %f", xl, xll);
+        }
+    }
+    return 0;
+}
