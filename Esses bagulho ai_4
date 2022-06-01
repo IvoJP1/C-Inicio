@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+   char nome[] = {'P', 'R', 'O'};
+   char nome1[] = "PROG";
+
+   char vet1[10];
+   strcpy(vet1,"Programa");//copia o conteudo indicado para a variavel vet "string"
+
+   char vet2[10];
+   gets(vet2);//Permite colocar na variavel que recebe por parametro, todos os caracteres introduzidos.
+
+   puts(nome);//função puts: coloca na tela a string passada à função e, em seguida faz automaticamente a mudança de linha
+   puts(nome1);
+   puts(vet1);
+   puts(vet2);
+
+    return 0;
+}
