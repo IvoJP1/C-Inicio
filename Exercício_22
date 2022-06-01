@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int a;
+int seis(){
+    if(a % 6 == 0){
+        printf("É divisivel por 6");
+    }
+    else{
+        printf("Não é divisivel por 6");
+    }
+}
+
+int main()
+{
+    printf("Digite um valor: ");
+    scanf("%d", &a);
+    seis(a);
+    return 0;
+}
